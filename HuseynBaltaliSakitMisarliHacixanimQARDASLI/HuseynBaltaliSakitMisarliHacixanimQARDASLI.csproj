@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36D53696-5224-4ACB-90B3-529042FE4EE4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HuseynBaltaliSakitMisarliHacixanimQARDASLI</RootNamespace>
+    <AssemblyName>HuseynBaltaliSakitMisarliHacixanimQARDASLI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="images\01.jpg" />
+    <Content Include="images\02.jpg" />
+    <Content Include="images\03.jpg" />
+    <Content Include="images\03_files\1asyncjs.php" />
+    <Content Include="images\03_files\1lg.php" />
+    <Content Include="images\03_files\cb_scout5.png" />
+    <Content Include="images\03_files\chart.png" />
+    <Content Include="images\03_files\google_white5.png" />
+    <Content Include="images\03_files\hand.jpg" />
+    <Content Include="images\03_files\hand_files\1asyncjs.php" />
+    <Content Include="images\03_files\hand_files\1lg.php" />
+    <Content Include="images\03_files\hand_files\chart.png" />
+    <Content Include="images\03_files\hand_files\home-1-223x227.jpg" />
+    <Content Include="images\03_files\hand_files\home-10-184x54.png" />
+    <Content Include="images\03_files\hand_files\home-11-184x54.png" />
+    <Content Include="images\03_files\hand_files\home-12-47x47.jpg" />
+    <Content Include="images\03_files\hand_files\home-13-47x47.jpg" />
+    <Content Include="images\03_files\hand_files\home-14-47x47.jpg" />
+    <Content Include="images\03_files\hand_files\home-15-47x47.jpg" />
+    <Content Include="images\03_files\hand_files\home-16-370x247.jpg" />
+    <Content Include="images\03_files\hand_files\home-17-370x247.jpg" />
+    <Content Include="images\03_files\hand_files\home-18-370x247.jpg" />
+    <Content Include="images\03_files\hand_files\home-19-370x247.jpg" />
+    <Content Include="images\03_files\hand_files\home-2-223x227.jpg" />
+    <Content Include="images\03_files\hand_files\home-20-370x247.jpg" />
+    <Content Include="images\03_files\hand_files\home-21-370x247.jpg" />
+    <Content Include="images\03_files\hand_files\home-3-223x227.jpg" />
+    <Content Include="images\03_files\hand_files\home-4-223x227.jpg" />
+    <Content Include="images\03_files\hand_files\home-5-223x227.jpg" />
+    <Content Include="images\03_files\hand_files\home-6-223x227.jpg" />
+    <Content Include="images\03_files\hand_files\home-7-184x54.png" />
+    <Content Include="images\03_files\hand_files\home-8-184x54.png" />
+    <Content Include="images\03_files\hand_files\home-9-184x54.png" />
+    <Content Include="images\03_files\hand_files\home-slide-1-1920x600.jpg" />
+    <Content Include="images\03_files\hand_files\home-slide-2-1920x600.jpg" />
+    <Content Include="images\03_files\hand_files\home-slide-3-1920x600.jpg" />
+    <Content Include="images\03_files\hand_files\livedemo.css" />
+    <Content Include="images\03_files\hand_files\logo-dark-176x43.png" />
+    <Content Include="images\03_files\hand_files\logo-light-176x43.png" />
+    <Content Include="images\03_files\hand_files\logo_tm_head_new.svg" />
+    <Content Include="images\03_files\hand_files\owl.carousel.css" />
+    <Content Include="images\03_files\hand_files\owl.theme.css" />
+    <Content Include="images\03_files\hand_files\parallax-1.jpg" />
+    <Content Include="images\03_files\hand_files\pixel.gif" />
+    <Content Include="images\03_files\hand_files\rcj-99d43ead6bdf30da8ed5ffcb4f17100c.html" />
+    <Content Include="images\03_files\hand_files\seg.gif" />
+    <Content Include="images\03_files\hand_files\sertificate-28x44.png" />
+    <Content Include="images\03_files\hand_files\style.css" />
+    <Content Include="images\03_files\hand_files\svg-icons.css" />
+    <Content Include="images\03_files\hand_files\wt_58972_v2.html" />
+    <Content Include="images\03_files\home-1-223x227.jpg" />
+    <Content Include="images\03_files\home-10-184x54.png" />
+    <Content Include="images\03_files\home-11-184x54.png" />
+    <Content Include="images\03_files\home-12-47x47.jpg" />
+    <Content Include="images\03_files\home-13-47x47.jpg" />
+    <Content Include="images\03_files\home-14-47x47.jpg" />
+    <Content Include="images\03_files\home-15-47x47.jpg" />
+    <Content Include="images\03_files\home-16-370x247.jpg" />
+    <Content Include="images\03_files\home-17-370x247.jpg" />
+    <Content Include="images\03_files\home-18-370x247.jpg" />
+    <Content Include="images\03_files\home-19-370x247.jpg" />
+    <Content Include="images\03_files\home-2-223x227.jpg" />
+    <Content Include="images\03_files\home-20-370x247.jpg" />
+    <Content Include="images\03_files\home-21-370x247.jpg" />
+    <Content Include="images\03_files\home-3-223x227.jpg" />
+    <Content Include="images\03_files\home-4-223x227.jpg" />
+    <Content Include="images\03_files\home-5-223x227.jpg" />
+    <Content Include="images\03_files\home-6-223x227.jpg" />
+    <Content Include="images\03_files\home-7-184x54.png" />
+    <Content Include="images\03_files\home-8-184x54.png" />
+    <Content Include="images\03_files\home-9-184x54.png" />
+    <Content Include="images\03_files\home-slide-1-1920x600.jpg" />
+    <Content Include="images\03_files\home-slide-2-1920x600.jpg" />
+    <Content Include="images\03_files\home-slide-3-1920x600.jpg" />
+    <Content Include="images\03_files\imgs8.png" />
+    <Content Include="images\03_files\livedemo.css" />
+    <Content Include="images\03_files\logo-dark-176x43.png" />
+    <Content Include="images\03_files\logo-light-176x43.png" />
+    <Content Include="images\03_files\logo_tm_head_new.svg" />
+    <Content Include="images\03_files\mapcnt6.png" />
+    <Content Include="images\03_files\owl.carousel.css" />
+    <Content Include="images\03_files\owl.theme.css" />
+    <Content Include="images\03_files\parallax-1.jpg" />
+    <Content Include="images\03_files\pixel.gif" />
+    <Content Include="images\03_files\rcj-99d43ead6bdf30da8ed5ffcb4f17100c.html" />
+    <Content Include="images\03_files\seg.gif" />
+    <Content Include="images\03_files\sertificate-28x44.png" />
+    <Content Include="images\03_files\style.css" />
+    <Content Include="images\03_files\svg-icons.css" />
+    <Content Include="images\03_files\tmapctrl.png" />
+    <Content Include="images\03_files\tmapctrl4.png" />
+    <Content Include="images\03_files\vt%281%29.png" />
+    <Content Include="images\03_files\vt%2810%29.png" />
+    <Content Include="images\03_files\vt%2811%29.png" />
+    <Content Include="images\03_files\vt%2812%29.png" />
+    <Content Include="images\03_files\vt%2813%29.png" />
+    <Content Include="images\03_files\vt%2814%29.png" />
+    <Content Include="images\03_files\vt%282%29.png" />
+    <Content Include="images\03_files\vt%283%29.png" />
+    <Content Include="images\03_files\vt%284%29.png" />
+    <Content Include="images\03_files\vt%285%29.png" />
+    <Content Include="images\03_files\vt%286%29.png" />
+    <Content Include="images\03_files\vt%287%29.png" />
+    <Content Include="images\03_files\vt%288%29.png" />
+    <Content Include="images\03_files\vt%289%29.png" />
+    <Content Include="images\03_files\vt.png" />
+    <Content Include="images\03_files\wt_58972_v2.html" />
+    <Content Include="images\111.jpg" />
+    <Content Include="images\ajax-loader.jpg" />
+    <Content Include="images\hand.jpg" />
+    <Content Include="images\home-1-223x227.jpg" />
+    <Content Include="images\home-10-184x54.jpg" />
+    <Content Include="images\home-11-184x54.jpg" />
+    <Content Include="images\home-12-47x47.jpg" />
+    <Content Include="images\home-13-47x47.jpg" />
+    <Content Include="images\home-14-47x47.jpg" />
+    <Content Include="images\home-15-47x47.jpg" />
+    <Content Include="images\home-16-370x247.jpg" />
+    <Content Include="images\home-17-370x247.jpg" />
+    <Content Include="images\home-18-370x247.jpg" />
+    <Content Include="images\home-19-370x247.jpg" />
+    <Content Include="images\home-2-223x227.jpg" />
+    <Content Include="images\home-20-370x247.jpg" />
+    <Content Include="images\home-21-370x247.jpg" />
+    <Content Include="images\home-3-223x227.jpg" />
+    <Content Include="images\home-4-223x227.jpg" />
+    <Content Include="images\home-5-223x227.jpg" />
+    <Content Include="images\home-6-223x227.jpg" />
+    <Content Include="images\home-7-184x54.jpg" />
+    <Content Include="images\home-8-184x54.jpg" />
+    <Content Include="images\home-9-184x54.jpg" />
+    <Content Include="images\logo-dark-176x43.jpg" />
+    <Content Include="images\logo-light-176x43.jpg" />
+    <Content Include="images\man1.jpg" />
+    <Content Include="images\man2.jpg" />
+    <Content Include="images\men3.jpg" />
+    <Content Include="images\parallax-1.jpg" />
+    <Content Include="images\rings.jpg" />
+    <Content Include="images\sertificate-28x44.jpg" />
+    <Content Include="images\z.jpg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-3.2.1.min.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="js\script.js" />
+    <Content Include="sass\style.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="css\style.css.map" />
+    <Content Include="images\03_files\0" />
+    <Content Include="images\03_files\107344983270279" />
+    <Content Include="images\03_files\5ab41f034f43c29d4e5b5082a08f9be1_1.js.Без названия" />
+    <Content Include="images\03_files\72d7dcce33" />
+    <Content Include="images\03_files\838473489555909" />
+    <Content Include="images\03_files\adsct" />
+    <Content Include="images\03_files\analytics.js.Без названия" />
+    <Content Include="images\03_files\bat.js.Без названия" />
+    <Content Include="images\03_files\broadcast-translates.js.Без названия" />
+    <Content Include="images\03_files\common.js.Без названия" />
+    <Content Include="images\03_files\config.js.Без названия" />
+    <Content Include="images\03_files\controls.js.Без названия" />
+    <Content Include="images\03_files\conversion_async.js.Без названия" />
+    <Content Include="images\03_files\core.min.js.Без названия" />
+    <Content Include="images\03_files\css" />
+    <Content Include="images\03_files\ec.js.Без названия" />
+    <Content Include="images\03_files\fbevents.js.Без названия" />
+    <Content Include="images\03_files\ga.js.Без названия" />
+    <Content Include="images\03_files\gtm.js%281%29.Без названия" />
+    <Content Include="images\03_files\gtm.js.Без названия" />
+    <Content Include="images\03_files\hand_files\0" />
+    <Content Include="images\03_files\hand_files\107344983270279" />
+    <Content Include="images\03_files\hand_files\5ab41f034f43c29d4e5b5082a08f9be1_1.js.Без названия" />
+    <Content Include="images\03_files\hand_files\72d7dcce33" />
+    <Content Include="images\03_files\hand_files\838473489555909" />
+    <Content Include="images\03_files\hand_files\adsct" />
+    <Content Include="images\03_files\hand_files\analytics.js.Без названия" />
+    <Content Include="images\03_files\hand_files\bat.js.Без названия" />
+    <Content Include="images\03_files\hand_files\broadcast-translates.js.Без названия" />
+    <Content Include="images\03_files\hand_files\common.js.Без названия" />
+    <Content Include="images\03_files\hand_files\config.js.Без названия" />
+    <Content Include="images\03_files\hand_files\conversion_async.js.Без названия" />
+    <Content Include="images\03_files\hand_files\core.min.js.Без названия" />
+    <Content Include="images\03_files\hand_files\css" />
+    <Content Include="images\03_files\hand_files\ec.js.Без названия" />
+    <Content Include="images\03_files\hand_files\fbevents.js.Без названия" />
+    <Content Include="images\03_files\hand_files\ga.js.Без названия" />
+    <Content Include="images\03_files\hand_files\gtm.js%281%29.Без названия" />
+    <Content Include="images\03_files\hand_files\gtm.js.Без названия" />
+    <Content Include="images\03_files\hand_files\hotjar-721793.js.Без названия" />
+    <Content Include="images\03_files\hand_files\iframe_api" />
+    <Content Include="images\03_files\hand_files\indclude-js.min.js.Без названия" />
+    <Content Include="images\03_files\hand_files\insight.min.js.Без названия" />
+    <Content Include="images\03_files\hand_files\iwl.js.Без названия" />
+    <Content Include="images\03_files\hand_files\linkid.js.Без названия" />
+    <Content Include="images\03_files\hand_files\modules-526d80f8c01454f84b75838f21c8706e.js.Без названия" />
+    <Content Include="images\03_files\hand_files\monsterBundle.js.Без названия" />
+    <Content Include="images\03_files\hand_files\nr-1059.min.js.Без названия" />
+    <Content Include="images\03_files\hand_files\prum.min.js.Без названия" />
+    <Content Include="images\03_files\hand_files\saved_resource" />
+    <Content Include="images\03_files\hand_files\saved_resource%281%29" />
+    <Content Include="images\03_files\hand_files\saved_resource%282%29" />
+    <Content Include="images\03_files\hand_files\script.js.Без названия" />
+    <Content Include="images\03_files\hand_files\stats.js.Без названия" />
+    <Content Include="images\03_files\hand_files\util.js.Без названия" />
+    <Content Include="images\03_files\hand_files\uwt.js.Без названия" />
+    <Content Include="images\03_files\hand_files\varnish.compiled.application.en.js.Без названия" />
+    <Content Include="images\03_files\hand_files\www-widgetapi.js.Без названия" />
+    <Content Include="images\03_files\hotjar-721793.js.Без названия" />
+    <Content Include="images\03_files\iframe_api" />
+    <Content Include="images\03_files\indclude-js.min.js.Без названия" />
+    <Content Include="images\03_files\infowindow.js.Без названия" />
+    <Content Include="images\03_files\insight.min.js.Без названия" />
+    <Content Include="images\03_files\linkid.js.Без названия" />
+    <Content Include="images\03_files\map.js.Без названия" />
+    <Content Include="images\03_files\marker.js.Без названия" />
+    <Content Include="images\03_files\modules-526d80f8c01454f84b75838f21c8706e.js.Без названия" />
+    <Content Include="images\03_files\monsterBundle.js.Без названия" />
+    <Content Include="images\03_files\nr-1059.min.js.Без названия" />
+    <Content Include="images\03_files\onion.js.Без названия" />
+    <Content Include="images\03_files\prum.min.js.Без названия" />
+    <Content Include="images\03_files\saved_resource" />
+    <Content Include="images\03_files\saved_resource%281%29" />
+    <Content Include="images\03_files\saved_resource%282%29" />
+    <Content Include="images\03_files\saved_resource%283%29" />
+    <Content Include="images\03_files\script.js.Без названия" />
+    <Content Include="images\03_files\stats.js.Без названия" />
+    <Content Include="images\03_files\util.js.Без названия" />
+    <Content Include="images\03_files\uwt.js.Без названия" />
+    <Content Include="images\03_files\varnish.compiled.application.en.js.Без названия" />
+    <Content Include="images\03_files\www-widgetapi.js.Без названия" />
+    <Content Include="sass\style.css.map" />
+    <Content Include="sass\style.scss" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50037</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50037/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
